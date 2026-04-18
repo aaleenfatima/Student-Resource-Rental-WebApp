@@ -1,0 +1,317 @@
+.signInPage {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  min-height: 100vh;
+}
+
+
+.submitButton:hover {
+  background-color: #0094d8; /* Slightly darker shade of the original blue for a subtle effect */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+}
+
+/* Main Content */
+.mainContent {
+  display: flex;  /* Ensure the container uses flexbox */
+  justify-content: space-around;  /* Space items appropriately */
+  align-items: start;  /* Align items at the top */
+  padding: 0 300px;  /* Horizontal padding, adjust as needed */
+  margin-top: 126px;  /* Top margin, adjust as needed */
+  gap: 40px;  /* Gap between elements */
+}
+
+/* Feature Section */
+.featureSection {
+  flex: 1;  /* Allow the section to grow */
+  min-width: 400px;  /* Minimum width */
+  max-width: 450px;  /* Maximum width to avoid too wide sections */
+  margin-left: -100px;
+  margin-right: 85px;
+  margin-top: 50px;
+}
+
+.featureCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 0px;
+}
+
+.featureContent {
+  flex: 1;
+  min-width: 240px;
+}
+
+.featureTitle {
+  color: #191f33;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.featureDescription {
+  color: #767e94;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 12px;
+}
+
+.divider {
+  height: 1px;
+  background-color: #ebeef7;
+  margin: 50px 0;
+}
+
+/* Sign In Form */
+.signInFormContainer {
+  flex: 2;  /* Allows the sign-in form to take up more space */
+  min-width: 600px;
+  max-width: 540px;  /* Maximum width for the form */
+  box-shadow: 0px 24px 100px rgba(0, 29, 73, 0.12);  /* Stylish shadow */
+  padding: 50px;  /* Padding around the form */
+  border-radius: 30px;  /* Rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adding transition for transform and shadow */
+  margin: auto;
+}
+
+.signInFormContainer:hover {
+  transform: scale(1.03);  /* Slightly enlarges the form to 103% of its original size */
+  box-shadow: 0px 30px 120px rgba(0, 29, 73, 0.15);  /* Intensifies the shadow for a deeper effect */
+}
+
+
+.formHeader {
+  text-align: center;
+}
+
+.formTitle {
+  color: #191f33;
+  font-family: Nunito Sans, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 32px 0;
+  color: #464d61;
+  font-family: Nunito, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #ebeef7;
+}
+
+.dividerText {
+  padding: 0 12px;
+  background: #fff;
+}
+
+.signInForm {
+  width: 100%;
+  max-width: 548px;
+  margin: 0 auto;
+}
+
+.formInput {
+  width: 100%;
+  padding: 12px 18px;
+  border: 1px solid #edeff5;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  font-family: Nunito, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #939aad;
+  transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.formInput:focus {
+  border-color: #0ea5e9;
+  outline: none; 
+  box-shadow: 0 0 0 1px #0ea5e9;
+}
+
+.passwordInput {
+  position: relative;
+}
+
+.togglePassword {
+  position: absolute;
+  right: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.formOptions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0;
+  font-size: 14px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #636a80;
+  cursor: pointer;
+}
+
+.forgotPassword {
+  color: #0af;
+  background: none;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 4px;
+  text-decoration: none; /* No underline by default */
+  transition: text-decoration-color 0.3s ease, color 0.3s ease; /* Smooth transition for underline and color */
+}
+.forgotPassword:hover {
+  color: #066; /* Darkens the link color on hover */
+  text-decoration: underline; /* Applies underline on hover */
+  text-decoration-color: #066; /* Changes the color of the underline on hover */
+  text-decoration-thickness: 2px; /* Optional: Adjust thickness of the underline on hover */
+}
+
+.submitButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background-color: #0af;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0 32px;
+  height: 58px;
+  font-family: Nunito Sans, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin-top: 32px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for background color and shadow */
+}
+
+.submitButton:hover {
+  background-color: #0094d8; /* Slightly darker shade of the original blue for a subtle effect */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+}
+
+
+.signUpPrompt {
+  text-align: center;
+  margin-top: 32px;
+  font-family: Nunito, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #767e94;
+}
+
+.signUpLink {
+  color: #0af;
+  background: none;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 4px;
+  text-decoration: none; /* No underline by default */
+  transition: text-decoration-color 0.3s ease, color 0.3s ease; /* Smooth transition for underline and color */
+}
+
+.signUpLink:hover {
+  color: #066; /* Darkens the link color on hover */
+  text-decoration: underline; /* Applies underline on hover */
+  text-decoration-color: #066; /* Changes the color of the underline on hover */
+  text-decoration-thickness: 2px; /* Optional: Adjust thickness of the underline on hover */
+}
+/* Hide the default file input */
+.fileInput {
+  display: none;
+}
+
+/* Custom file button */
+.customFileButton {
+  display: inline-block;
+  background-color: #0af;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
+}
+
+.customFileButton:hover {
+  background-color: #0094d8;
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.customFileButton:active {
+  background-color: #007bb5; /* Darker blue when clicked */
+}
+
+/* Preview Image Style */
+.previewImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Remove photo button */
+.removePhotoButton {
+  background-color: #ff4f4f;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.removePhotoButton:hover {
+  background-color: #d44f4f;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+  .mainContent
+  {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .mainContent {
+    flex-direction: column;  /* Stack elements under each other on smaller screens */
+    padding: 20px;  /* Reduced padding on smaller screens */
+    gap: 20px;  /* Reduced gap on smaller screens */
+  }
+
+  .signInFormContainer {
+    padding: 20px;
+  }
+  .featureSection, 
+  .signInFormContainer {
+    width: 100%;  /* Full width for smaller screens */
+    max-width: none;  /* Remove max width restrictions on smaller screens */
+  }
+}
