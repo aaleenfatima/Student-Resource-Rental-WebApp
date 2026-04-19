@@ -2,6 +2,10 @@
 
 A full-stack web application for renting and sharing resources within a community. The platform enables users to post personal ads, trade items, donate blood, report lost and found items, and manage their profiles.
 
+# Developers
+- Aaleen Fatima
+- Mariyam Akram
+- Sabih Khan
 ## Features
 
 - **User Authentication**: Secure sign-up and sign-in functionality with password encryption
